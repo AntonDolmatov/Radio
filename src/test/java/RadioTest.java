@@ -10,6 +10,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setCurrentStation_ValidStation_LowerLimits() {
         Radio radio = new Radio();
@@ -28,6 +29,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setCurrentStation_ValidStation_Middle() {
         Radio radio = new Radio();
@@ -36,6 +38,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setCurrentStation_ValidStation_BelowHighLimit() {
         Radio radio = new Radio();
@@ -44,6 +47,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setCurrentStation_ValidStation_HighLimit() {
         Radio radio = new Radio();
@@ -52,6 +56,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setCurrentStation_InvalidStation_OverHighLimit() {
         Radio radio = new Radio();
@@ -60,6 +65,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void next_LowerLimits() {
         Radio radio = new Radio();
@@ -69,6 +75,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void next_OverLowerLimits() {
         Radio radio = new Radio();
@@ -78,6 +85,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void next_Middle() {
         Radio radio = new Radio();
@@ -87,6 +95,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void next_BelowHighLimit() {
         Radio radio = new Radio();
@@ -96,6 +105,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void next_HighLimit() {
         Radio radio = new Radio();
@@ -105,6 +115,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void prev_LowerLimits() {
         Radio radio = new Radio();
@@ -114,6 +125,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void prev_OverLowerLimits() {
         Radio radio = new Radio();
@@ -123,6 +135,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void prev_Middle() {
         Radio radio = new Radio();
@@ -132,6 +145,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void prev_BelowHighLimit() {
         Radio radio = new Radio();
@@ -141,6 +155,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void prev_HighLimit() {
         Radio radio = new Radio();
@@ -150,6 +165,7 @@ public class RadioTest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setSoundVolume_InvalidStation_BelowLowerLimits() {
         Radio radio = new Radio();
@@ -159,6 +175,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setSoundVolume_ValidStation_LowerLimits() {
         Radio radio = new Radio();
@@ -167,6 +184,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setSoundVolume_ValidStation_OverLowerLimits() {
         Radio radio = new Radio();
@@ -175,6 +193,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setSoundVolume_ValidStation_Middle() {
         Radio radio = new Radio();
@@ -183,6 +202,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setSoundVolume_ValidStation_BelowHighLimit() {
         Radio radio = new Radio();
@@ -191,6 +211,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setSoundVolume_ValidStation_HighLimit() {
         Radio radio = new Radio();
@@ -199,6 +220,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void setSoundVolume_InvalidStation_OverHighLimit() {
         Radio radio = new Radio();
@@ -208,6 +230,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseVolume_LowerLimits() {
         Radio radio = new Radio();
@@ -217,6 +240,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseVolume_OverLowerLimits() {
         Radio radio = new Radio();
@@ -226,6 +250,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseVolume_Middle() {
         Radio radio = new Radio();
@@ -235,6 +260,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseVolume_BelowHighLimit() {
         Radio radio = new Radio();
@@ -244,6 +270,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseVolume_HighLimit() {
         Radio radio = new Radio();
@@ -253,6 +280,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void reduceVolume_LowerLimits() {
         Radio radio = new Radio();
@@ -262,6 +290,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void reduceVolume_OverLowerLimits() {
         Radio radio = new Radio();
@@ -271,6 +300,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void reduceVolume_Middle() {
         Radio radio = new Radio();
@@ -280,6 +310,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void reduceVolume_BelowHighLimit() {
         Radio radio = new Radio();
@@ -289,6 +320,7 @@ public class RadioTest {
         int actual = radio.getSoundVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void reduceVolume_HighLimit() {
         Radio radio = new Radio();
