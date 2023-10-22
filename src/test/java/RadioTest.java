@@ -2,6 +2,52 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
+
+    @Test
+    public void setRadioNumberMax() {
+        Radio radio = new Radio(20);
+
+        radio.setCurrentStation(19);
+
+        int expected = 19;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setRadioNumberMoreMax() {
+        Radio radio = new Radio(20);
+
+        radio.setCurrentStation(20);
+
+        int expected = 0;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setRadioNumberMin() {
+        Radio radio = new Radio(20);
+
+        radio.setCurrentStation(0);
+
+        int expected = 0;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setRadioNumberLessMin() {
+        Radio radio = new Radio(20);
+
+        radio.setCurrentStation(-1);
+
+        int expected = 0;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
+
     @Test
     public void setCurrentStation_InvalidStation_BelowLowerLimits() {
         Radio radio = new Radio();
